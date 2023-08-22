@@ -30,5 +30,6 @@ public class LoginTest {
         MainPage.LoginFromMainPage("fail@test.by", "555");
         String errorMsg = Driver.browser.findElement(By.className("error_message")).getText();
         Assert.assertEquals(errorMsg, "Oops, error. Email and/or password don't match our records", "Incorrect error message!!!");
+        Driver.browser.quit();
     }
 }
