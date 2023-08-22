@@ -9,7 +9,7 @@ public class LoginTest {
 
     //1 Открыть страницу https://www.sharelane.com/cgi-bin/main.py
     //2 Перейти по ссылке Shoping Cart
-    //3 Проверить сообщение об ошибке
+    //3 Проверить сообщение об ошибке.
 
     @Test
     public void verifyGoToShoppingCartWithoutLoginTest() {

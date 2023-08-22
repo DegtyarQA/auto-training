@@ -2,6 +2,7 @@ package org.example;
 
 import org.openqa.selenium.By;
 
+////Вспомогательные методы главной страницы
 public class MainPage {
 
     public static void LoginFromMainPage(String email, String password) {
