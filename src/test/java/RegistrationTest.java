@@ -17,7 +17,7 @@ public class RegistrationTest {
     }
 
     @Test
-    public void verifyRegistrationWithoutSetEmail(){
+    public void verifyRegistrationWithoutSetEmailTest(){
         RegisterPage.stepEnterZIPcode();
         RegisterPage.fillFormRegistrationWitgoutEmail();
         String errorMsg = Driver.browser.findElement(By.className("error_message")).getText();

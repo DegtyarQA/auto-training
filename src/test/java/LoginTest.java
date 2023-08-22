@@ -26,7 +26,7 @@ public class LoginTest {
     //5 проверить сообщение о неуспешном логине.
 
     @Test
-    public void verifyLoginWithIncorrectCreadentials(){
+    public void verifyLoginWithIncorrectCreadentialsTest(){
         MainPage.LoginFromMainPage("fail@test.by", "555");
         String errorMsg = Driver.browser.findElement(By.className("error_message")).getText();
         Assert.assertEquals(errorMsg, "Oops, error. Email and/or password don't match our records", "Incorrect error message!!!");
