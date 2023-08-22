@@ -23,7 +23,7 @@ public class LoginTest {
     //2 Заполнить поле email, данными которых нет в системе
     //3 Заполнить поле password, данными которых нет в системе
     //4 Нажать кнопку Login
-    //5 проверить сообщение о неуспешном логине
+    //5 проверить сообщение о неуспешном логине.
 
     @Test
     public void verifyLoginWithIncorrectCreadentials(){
