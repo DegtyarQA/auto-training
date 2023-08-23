@@ -3,7 +3,7 @@ package org.example;
 import org.openqa.selenium.By;
 
 public class RegisterPage {
-
+    //Вспомогательные методы страницы регистрации
     public static void stepEnterZIPcode(){
         Driver.browser.get("https://www.sharelane.com/cgi-bin/register.py");
         Driver.browser.findElement(By.xpath("//input[@name='zip_code']")).sendKeys("12345");

@@ -9,7 +9,7 @@ public class LoginTest {
 
     //1 Открыть страницу https://www.sharelane.com/cgi-bin/main.py
     //2 Перейти по ссылке Shoping Cart
-    //3 Проверить сообщение об ошибке
+    //3 Проверить сообщение об ошибке.
 
     @Test
     public void verifyGoToShoppingCartWithoutLoginTest() {
@@ -23,12 +23,13 @@ public class LoginTest {
     //2 Заполнить поле email, данными которых нет в системе
     //3 Заполнить поле password, данными которых нет в системе
     //4 Нажать кнопку Login
-    //5 проверить сообщение о неуспешном логине
+    //5 проверить сообщение о неуспешном логине.
 
     @Test
-    public void verifyLoginWithIncorrectCreadentials(){
+    public void verifyLoginWithIncorrectCreadentialsTest(){
         MainPage.LoginFromMainPage("fail@test.by", "555");
         String errorMsg = Driver.browser.findElement(By.className("error_message")).getText();
         Assert.assertEquals(errorMsg, "Oops, error. Email and/or password don't match our records", "Incorrect error message!!!");
+        Driver.browser.quit();
     }
 }
